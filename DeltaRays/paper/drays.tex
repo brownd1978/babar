@@ -1,0 +1,248 @@
+\documentclass[review]{elsarticle}
+
+%BaBar symbols
+\include {babarsym}
+% symbols unique to this paper
+\def\deltaray{\ensuremath{{\rm \delta}-ray}\xspace}
+\def\deltarays{\ensuremath{{\rm \delta}-rays}\xspace}
+\def\eetomm{\ensuremath{ \epem \to \mumu}\xspace}
+\def\mutoe{\ensuremath{\mu \to e}\xspace}
+
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{\nimBaseA}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{High Energy \deltaray Production by Muons in the \lbabar \xspace Detector}
+%\tnoteref{mytitlenote}}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+\author[LBLaddress]{David N. Brown\corref{mycorrespondingauthor}}
+\author[LBLaddress]{Brian Chan}
+\author[LBLaddress]{Tom-Eric Haugen}
+\address[LBLaddress]{Lawrence Berkeley National Lab}
+
+\begin{abstract}
+In this note we present a measurement of the \deltaray production cross section
+by muons in the \babar detector \cite{babarnim}, for \deltarays between 50 and 300 MeV.
+The \babar experiment
+recorded over 500M \eetomm events near the upsilon resonances over its 7 year
+run, producing over 1G muons with a lab frame energies between 3 and 9 GeV.
+These muons produced \deltarays
+when traversing the beampipe and other material in the BaBar inner tracker
+region.  We identify
+\deltaray candidates by associating a reconstructed low-momentum negatively
+charged track with a nearby reconstructed high-momentum track in events
+consistent with the \eetomm process, where
+the two track’s point of closest approach (POCA) is consistent with a known
+piece of dense material.  A detailed simulation predicts the primary \deltaray
+background comes from electrons produced in the
+conversion of photons radiated by the muons, which we measure by applying the
+same reconstruction algorithm to positively charged tracks.  Monte Carlo
+simulation is used to estimate the remaining backgrounds,
+which are estimated to be less than 1\% of the predicted signal.  Simulation is
+also used to estimate the reconstruction efficiency, the \deltaray energy
+resolution, and to predict the mis-identification of the radiator material.  We
+extract a cross-section by normalizing the corrected production rate to the
+estimated material traversed by the associated reconstructed muon candidate
+track, as a function of the reconstructed electron candidate track energy.  The
+cross-section errors are dominated by uncertainty in the radiator material
+mass, which is roughly 5\% and coherent across the energy points measured.  The
+resulting cross-section is found to be consistent with theoretical predictions
+within errors.
+
+\end{abstract}
+
+\begin{keyword}
+\texttt{Material Interactions}
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+Atomic electrons ejected by high-energy charged particles passing through
+matter (\deltarays) can be a background for experiments using electrons as
+signals.  An example is the \mutoe experiment \cite{mutoe}, which will search for muon
+to electron conversion in the field of an aluminum nucleus.  In that experiment
+the signal signature is the observation of an isolated 105 MeV electron.
+Simulations of the \mutoe experiment based on the Geant \cite{g4} Monte Carlo
+indicate \deltarays produced by cosmic ray muons mimic the signal process
+at a rate many times the experimental sensitivity goal, motivating
+the need for an active cosmic ray veto.  Validating the \mutoe experiment design
+and estimating the resulting experimental sensitivity thus depends crucially on
+understanding the \deltaray production cross section.
+
+A quantitative theoretical explanation of \deltaray production was derived in
+the 1930s from quantum electrodynamics \cite{drtheory}, and is incorporated in the
+\deltaray production model used by the Geant Monte Carlo \cite{g4}.  This theory
+and has been shown to agree with measurements for low energy ($< 1$ MeV)
+electrons \cite{drexpt}, however it has not been verified experimentally for
+\deltarays in the energy range relevant to the \mutoe experiment.
+
+
+\section{The \babar Detector and Data Sample}
+
+The \babar experiment operated for 7 years at the 
+\pepII collider at SLAC \cite{pepII}.
+This provided approximately ** accumulated luminosity at the \FourS.  Additional
+off-resonance samples and samples at other $\Upsilon$ resonances were recorded but
+not used in this analysis.  The process \eetomm produced a sample of over
+$10^9$ muons between roughly 3 and 9 GeV.
+
+The \babar detector was designed to record the results of $epem$ collisions at
+a center of mass energy near the Upsilon resonances.  The \babar
+beampipe, Silicon Vertex Tracker (SVT) layers , Carbon fiber Support Tube
+(CST), and  Drift Chamber (DCH) inner wall each presented a few  \% of a
+radiation length of thin material to normal incident muons, providing radiators
+for \deltaray production.  A detailed description of the material composition
+of these structures is given in table \ref{materials}, while more general
+information about the \babar detector can be found in \cite{babarnim}.
+
+Charged particles in \babar produced signals in the SVT and DCH, which were
+reconstructed as tracks using standard pattern recognition algorithms.  High
+transverse momentum ($p_t > 100 MeV/c$) were identified primarily in the DCH,
+while low transverse momentum tracks were found primarily in the SVT.  Tracks
+identified in the DCH (SVT) were extrapolated into the SVT (DCH) to produce
+complete tracks.  Final tracks were fit with a Kalman filter that compensated
+for the effects of the energy lost in traversed materials and the inhomogeneous
+\babar magnetic field.  Electrons with transverse momentum above 50 MeV/c (100
+MeV/c) from the \epem interaction point were reconstructed with $>$ 50%
+efficiency by the SVT (DCH), respectively.  Details of the \babar track
+reconstruction algorithms and its performance can be found in \cite{babarnim2}.
+
+\section{Monte Carlo Simulation}
+
+To simulate the \eetomm process we use the {\em KK2F} \cite{kk2f} generator, which
+includes the effects of initial and final state radiation (*** more is needed
+here).  The initial electron and positron 4-momenta are selected randomly
+according to the distributions observed in the \babar \Y4S runs, as described
+in \ref{lumipaper}.  Figure \ref{mumom} plots the lab-frame energy of muons
+from  \eetomm predicted by the kk2f generator.  Only events in which both muons
+are produced in the active tracking volume are included.  Overlaid on figure
+\ref{mumonm} is the expected momentum spectrum of cosmic ray muons that
+generate signals in the \mutoe tracker, as predicted
+by the Daya Bay experiment (need a real reference here**)
+\cite{dayabay} generator and the \mutoe simulation \cite{mutoe}.  A reasonable
+overlap is seen.
+
+The interaction of particles with the \babar detector is simulated using a
+detailed model built using the Geant4 toolkit \cite{g4}.  Detector components
+are modeled assuming the ideal (design) geometry with sim\section{The \babar
+Detector and Data Sample}
+
+The \babar experiment operated for 7 years at the SLAC B factory, which
+provided approximately ** accumulated luminosity at the \Y4S.  Additional
+off-resonance samples and samples at other Upsilon resonances were recorded but
+not used in this analysis.  The process \eetomm produced a sample of over
+$10^9$ muons between roughly 3 and 9 GeV.
+
+The \babar detector was designed to record the results of $epem$ collisions at
+a center of mass energy near the Upsilon resonances [babar].  The \babar
+beampipe, {\em Silicon Vertex Tracker} (SVT) layers , {\em Carbon Fiber Support Tube}
+(CST), and  {\em Drift Chamber} (DCH) inner wall each presented a few  \% of a
+radiation length of thin material to normal incident muons, providing radiators
+for \deltaray production.  A detailed description of the material composition
+of these structures is given in table \ref{materials}, while more general
+information about the \babar detector can be found in \cite{babarnim}.
+
+Charged particles in \babar produced signals in the SVT and DCH, which were
+reconstructed as tracks using standard pattern recognition algorithms.  High
+transverse momentum ($p_t > 100 MeV/c$) were identified primarily in the DCH,
+while low transverse momentum tracks were found primarily in the SVT.  Tracks
+identified in the DCH (SVT) were extrapolated into the SVT (DCH) to produce
+complete tracks.  Final tracks were fit with a Kalman filter that compensated
+for the effects of the energy lost in traversed materials and the inhomogeneous
+\babar magnetic field.  Electrons with transverse momentum above 50 MeV/c (100
+MeV/c) from the $epem$ interaction point were reconstructed with $>$ 50%
+efficiency by the SVT (DCH), respectively.  Details of the \babar track
+reconstruction algorithms and its performance can be found in \cite{babarnim2}.
+
+plified shapes, using materials mixtures with relative elemental composition
+and masses set to agree with measurements made during construction, averaged
+over the relevant volumes.  For instance, the beampipe in the region of the
+$epem$ interaction point is modeled as a cylinder of $2.5cm**$ radius with $2mm***$
+wall thickness, as a material mix composed mostly of Beryllium and water, along
+with trace elements from platings and coatings, as listed in table
+\ref{tab:materials}.  Detailed features such as the interior vanes used to
+direct the cooling water flow were not modeled.  The material mix was
+determined by integrating the volume of each components and dividing by the
+total volume.  While the dimensions of the Beryllium components were well
+measured during detector construction, the coating thicknesses varied
+spatially, introducing some uncertainty.  In addition, the exact composition of
+one of the coatings \cite{paint} was proprietary to the corporation which
+produced it, and our values were based on oral communication.  Similarly, the
+SVT wafers are modeled as parallelepipeds with dimensions set to the average of
+those measured during construction \cite{babarnim}.  The material composition of
+the flex circuits was estimated by dissolving a spare circuit in acid, and
+precipitating out and weighing the metals.
+
+The Geant4 \deltaray production is simulated based on … (more here).  Figure
+\ref{draycomp} plots the \deltaray spectrum produced in a simple Geant4 Monte
+Carlo simulation of a mono-energetic 4 GeV muon traversing $2 mm$ of pure
+Beryllium.  Overlaid is a theoretical calculation based on \cite{drtheory},
+
+showing good agreement in the range covered.  Note there are no free parameters
+in this comparison.
+
+The \babar detector response simulation was tuned to reproduce detailed models
+of the low-level sensor response measurements, as described in \cite{babarnim2} chapter **.
+Dead channels in the detector were monitored and recorded coherently as a
+function of time.  Simulated data samples were produced suppressing a given set
+of measured dead channels, with event counts proportional to the luminosity
+recorded in the period in which that set was dead.
+
+The same reconstruction algorithms were run on simulated data as on \babar
+data.  The efficiency for reconstructing tracks in \babar data and simulation
+has been found to agree within the measured uncertainties over the range of
+momentum relevant to this measurement using well-defined test samples
+\cite{trackeff}.
+
+\section{\deltaray Reconstruction}
+
+
+
+\section*{References}
+
+\bibliography{drays}
+
+\end{document}
