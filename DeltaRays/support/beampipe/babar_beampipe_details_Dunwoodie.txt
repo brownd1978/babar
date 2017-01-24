@@ -1,0 +1,1704 @@
+
+  Beampipe Material, Dimensions, etc ; Support Tube, SVT R.F. Shields,
+  ====================================================================
+  Inner and Outer Drift Chamber Walls
+  ===================================
+
+  {  http://www.slac.stanford.edu/~wmd/beampipe/beampipe.material  }
+
+                                  { last modified: 2nd Dec., 2004 }
+
+1) Structure, Design and Actual Radial Dimensions
+   ==============================================
+
+    The beampipe in essence consists of 2 Be cylinders with a layer
+  of cooling water in between. The actual structure is somewhat more
+  complicated.
+
+    To the engineers, the inner cylinder is the beampipe and the outer
+  cylinder is the water jacket.
+
+    The beampipe has a constant inner diameter, and an initial design
+  wall thickness of 0.086". The outer surface was machined according to
+  a phi-z pattern which will be described later in order to create a
+  channel allowing the flow of cooling water; the design depth of this
+  channel is 0.054", so that over most of the tracking volume the
+  design thickness of the beampipe is 0.032".
+
+   The water jacket also has a constant inner diameter. The design
+  length is 11.49", and for the last 2.20" at each end the wall
+  thickness doubles from 0.020" to 0.040".
+
+   After the machining of the beampipe and water jacket had been
+  completed, the outside surface of the beampipe, and the inside
+  surface of the water jacket, were nickel-plated to protect against
+  corrosion due to the cooling water. The spec. for the Ni layer was
+  7+/-1 microns; measurements of the inside diameter of the water
+  jacket before and after plating indicate that an average value of
+  ~ 9 microns was actually achieved.
+
+   After assembly, the outer surface of the water jacket was sprayed
+  with BR127 Corrosion Inhibiting Primer [as used on every plane you
+  fly in]. Two coats were applied, yielding a layer estimated to be
+  15 +/- 5 microns thick. This is to prevent oxidation of the Be.
+
+   This primer was also flowed through the water channel, resulting
+  in a coating which is estimated to be 10 microns thick; the 
+  difference is due to the different mode of application.
+
+   According to the supplier [CYTEC], the primer has a SG = 1.37 when
+  dry, and contains ~15% by weight of Strontium Chromate [Sr Cr O_4 ;
+  SG = 3.895]. This constitutes ~5.3% by volume, the remainder being
+  a 50/50 mixture of epoxy and phenolic resins [effective average SG =
+  1.23, which is about the same as Lexan]. An estimate of the R.L. and
+  dE/dx properties of this stuff is made in section 3.
+
+  Gold was sputtered onto the inside surface of the beampipe; 
+  measurements of a test copper foil which had been subjected to this
+  process yielded a layer thickness ranging from 3 - 6 microns, with
+  an average value of 4.3 microns.
+
+
+  The following compares the design and actual radial dimensions of
+  the beampipe and water jacket [ actual values provided by Karen Fant].
+  Measurements were taken prior to Ni plating.
+  All dimensions are in inches; diameter is specified, NOT radius.
+                                ********
+  Beampipe
+  --------
+
+========================================================================
+           Design   Tolerance   Range of Measured    Average Measured
+                                Values (*)           Value
+========================================================================
+Inner               +0.000
+Diameter   1.968    -0.002      1.9662 - 1.9675      1.96665
+
+Diameter            +0.004
+of bottom  2.032    -0.000      2.032  - 2.0355      2.0334
+of water
+channel
+
+Outer               +0.000
+Diameter   2.140    -0.002      2.1390 - 2.1395      2.13923
+
+Thin Be
+Wall       0.032                                     0.0334
+
+Thick Be
+Wall       0.086                                     0.0863
+
+========================================================================
+(*) 2 copies of the beampipe and waterjacket were built [approx.cost
+    $150,000]; the range of measurements and average value are taken
+    over both copies since there is no record of which beampipe was
+    combined with which water jacket to form the final assembly.
+    The copy is crated and kept as a spare somewhere in the Vacuum
+    Building. The contact person at SLAC is Leo Giannini,
+    ext.3143, Building 202. Karen Fant should also be consulted, since
+    she was the Beampipe Project Engineer.
+
+    The copy has no inside layer of sputtered gold.
+
+  Water Jacket
+  ------------
+
+========================================================================
+           Design   Tolerance   Range of Measured    Average Measured
+                                Values (*)           Value
+========================================================================
+Inner               +0.001
+Diameter   2.152    -0.001      2.1528 - 2.1535      2.15315
+
+          After Ni plating      2.1522 - 2.1527      2.15245
+
+     Inferred Ni thickness                           0.0007/2 = 0.00035
+                                                     = 0.0009 cm
+
+Smaller
+Outer               +0.002
+Diameter   2.192    -0.000      2.1925 - 2.1938      2.19315
+
+
+Larger                          no measurements;     use design value
+Outer               +0.001      out of tracking
+Diameter   2.232    -0.002      volume               2.232
+
+{Note that 2 layers of Tantalum foil, net thickness 150 microns, are
+      wrapped around the outside of the water jacket in this region
+      of thicker Be wall}
+
+
+
+Thin Be
+Wall       0.020                                     0.02000
+
+Thick Be
+Wall       0.040                                     0.0394
+
+========================================================================
+
+
+
+
+2) Radial Distribution of Material
+   -------------------------------
+
+  Material              Be Radius[cm]         Comment
+  --------              -------------         -------
+
+  Beampipe              2.4976[inner]         sputtered Au coating;
+                                              thickness ~ 3-6 mu,
+                                              average   ~ 4.3 mu
+
+                        2.5824[outer],        entire surface is
+                        where Be              Ni plated [9 mu], and
+                        machined away         coated with BR127 [10 mu]
+                        to create cooling
+                        water channel;
+                        structure in (phi,z)
+                        is complicated; see
+                        drawings
+
+                        2.7168,where Be       same coatings
+                        not machined
+
+
+  Water Jacket          2.7345[inner]         entire surface is
+                                              Ni plated [9 mu], and
+                                              coated with BR127 [10 mu]
+
+                        2.7853[outer,         two coats BR127,
+                        thin wall,            sprayed on [ 15 mu ]
+                        inside tracking
+                        volume]
+
+                        2.8346[outer,         two coats BR127 [15 mu];
+                        thick wall,           wrapped with 150 mu
+                        outside tracking      thickness of Tantalum
+                        volume]               foil [outside tracking
+                                              volume];
+
+                        see drawings          see drawings, and ps files
+                                              in this directory
+                                              [Note:Tantalum is very
+                                               similar to Tungsten]
+
+ Pictures of the beampipe taken during the first period of assembly
+in the SLAC Clean Room can be found at the following locations:
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe1.ps.gz
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe2.ps.gz
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe3.ps.gz
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe4.ps.gz
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe5.ps.gz
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe6.ps.gz
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/beampipe7.ps.gz
+
+
+
+http://www.slac.stanford.edu/~sullivan/GenPEPII.htm
+
+
+
+http://www.slac.stanford.edu/grp/ad/me/BeBeam.htm
+
+
+3) Estimated Properties of BR127; other R.L. and dE/dx info.
+   =========================================================
+
+ BR127 composition:  15% by weight Sr Cr O_4 , remainder a 50/50
+                     mix of phenolic and epoxy resins
+
+                     S.G. when dry  = 1.37 [ from CYTEC ]
+
+                     S.G. Sr Cr O_4 = 3.895
+
+
+ Resin: approximate as an average of Nylon and Lexan
+ -----
+
+        R.L.   =   41.65 gm/cm**2
+
+        dE/dx  =    1.93 MeV/[gm/cm**2]
+
+
+ Sr Cr O_4:
+ ----------
+
+            R.L.[gm/cm**2]      dE/dx[MeV/{gm/cm**2}]
+ ------------------------------------------------------------------
+
+ Sr         11.03               1.33 {using Ge and Sn}
+
+ Cr         15.25               1.46 {using Ti and Fe}
+
+ O          34.24               1.80
+
+
+ Then, using the relevant atomic weights,
+
+   1/X0 =  [ 87.62/11.03 + 52.0/15.25 + 64.0/34.24] / 203.62
+
+              =  0.06494
+
+ so that   X0[Sr Cr O_4] = 15.4 gm/cm**2
+
+                         = 15.4 / 3.895  cm  = 3.95 cm
+
+ Similarly,
+
+  dE/dx =  [ 87.62*1.33 + 52.0*1.46 + 64.0*1.80] / 203.62
+
+        =  1.51 MeV/[gm/cm**2]   =  1.51*3.895 MeV/cm
+
+                                 =  5.88 MeV/cm
+
+
+ BR127:
+ -----
+       Combining these results to obtain estimates for BR127:
+
+      1/X0  = 0.15/15.4  + 0.85/41.65  = 0.030
+
+      X0    =  33.3 gm/cm**2
+
+            =  33.3/1.37 cm  =  24.2 cm
+
+
+      dE/dx =  0.15*1.51 + 0.85*1.93 = 1.87 MeV/{gm/cm**2}
+
+            =  1.87 * 1.37  MeV/cm   = 2.56 MeV/cm
+
+
+ ******************************************************************
+ * Estimated properties of BR127:                                 *
+ *                                                                *
+ *       X0 =  24.2 cm                                            *
+ *                                                                *
+ *    dE/dx =  2.56 MeV/cm                                        *
+ *                                                                *
+ ******************************************************************
+
+
+ Summary: R.L. and dE/dx for BR127 and Other Materials
+ -----------------------------------------------------
+
+
+ ------------------------------------------------------------------
+            R.L.                dE/dx                         S.G.
+
+            [cm]                [MeV/cm]
+            [gm/cm**2]          [MeV/{gm/cm**2}]
+ ------------------------------------------------------------------
+
+ Be         35.24               2.946                         1.848
+            65.12               1.594
+
+ H2O        36.08               1.991                         1.000
+            36.08               1.991
+
+ Ni          1.425             12.49  [Cu * density of Ni]    8.902
+            12.685              1.403 [Cu]
+
+ Ta          0.41              19.07  [W  * density of Ta]   16.654
+             6.828              1.145 [W]
+
+ Au          0.335             21.79  [Pt * density of Au]   19.3
+             6.4655             1.129 [Pt]
+
+ BR127      24.2                2.56                          1.37
+            33.3                1.87
+
+ ------------------------------------------------------------------
+
+
+4) Net Material Thickness
+ ------------------------
+a) Inside Tracking Volume, where Be Machined Away
+   ==============================================
+
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  Au                0.00043       0.128          0.009
+
+  Be                0.1356        0.385          0.399
+
+  Ni                0.0018        0.126          0.022
+
+  Water             0.1483        0.411          0.295
+
+  BR127             0.0035        0.014          0.009
+
+------------------------------------------------------------------------
+  Total                           1.064          0.734
+------------------------------------------------------------------------
+
+
+b) Inside Tracking Volume, where Be Not Machined Away
+   ==================================================
+
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  Au                0.00043       0.128          0.009
+
+  Be                0.2700        0.766          0.795
+
+  Ni                0.0018        0.126          0.022
+
+  Water             0.0139        0.039          0.028
+
+  BR127             0.0035        0.014          0.009
+
+------------------------------------------------------------------------
+  Total                           1.073          0.863
+------------------------------------------------------------------------
+
+
+c) Outside Tracking Volume, where Be Machined Away
+   ===============================================
+
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  Au                0.00043       0.128          0.009
+
+  Be                0.1849        0.525          0.545
+
+  Ni                0.0018        0.126          0.022
+
+  Water             0.1483        0.411          0.295
+
+  BR127             0.0035        0.014          0.009
+
+  Tantalum          0.0150        3.659          0.286
+
+------------------------------------------------------------------------
+  Total                           4.863          1.166
+------------------------------------------------------------------------
+
+
+d) Outside Tracking Volume, where Be Not Machined Away
+   ===================================================
+
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  Au                0.00043       0.128          0.009
+
+  Be                0.3193        0.906          0.941
+
+  Ni                0.0018        0.126          0.022
+
+  Water             0.0139        0.039          0.028
+
+  BR127             0.0035        0.014          0.009
+
+  Tantalum          0.0150        3.659          0.286
+
+------------------------------------------------------------------------
+  Total                           4.872          1.295
+------------------------------------------------------------------------
+
+  Comments
+  ********
+   i) the net R.L. is almost the same for the regions with and without
+      Be removed by machining; energy loss is 10-20% higher for the
+      regions from which Be has NOT been removed.
+
+   ii) each side of the water channel has a 9 micron layer of Ni and
+      a 10 micron layer of BR127 extending approx. 0.134 cm in the
+      radial direction; this will increase the amount of material
+      seen in the vicinity of the "ribs" on the outside of the beampipe
+      which define the water flow.
+
+
+5) Phi - z Specification of Regions a), b), c), and d) of Section 4
+   ================================================================
+   Disclaimer:
+   ==========
+         This is not an attempt to describe every last nut and bolt
+   in the vicinity of the beampipe. The aim is to define those
+   materials which have an impact on track reconstruction [data and MC],
+   and track generation [MC].
+
+   The region of z [w.r.t. the IP] considered is therefore as follows:
+
+   i) z>0 :   up to z = 13.477 cm, nominal; this corresponds to ~60%
+              of the length of the thicker portion of the water
+              jacket [i.e.is well under the Tantalum foil], and by
+              terminating here, the water channel geometry that
+              need be modeled is made simpler.
+
+
+              For the innermost beampipe radius [ 2.4976 cm ], the
+              corresponding polar angle w.r.t. z = 0 is 10.50 deg;
+              the interaction region is usually confined almost
+              entirely to |z| < 4.0 cm; the polar angle is still
+              only 14.76 deg. w.r.t. z = +4.0 cm, so that this range
+              of z terminates well below the forward track
+              reconstruction horizon [ ~ 20 deg. ] in all cases.
+
+
+  ii) z<0 :   up to the beginning of the aluminum collar which
+              overlaps the thicker portion of the outer Be
+              cylinder; this corresponds to z = -12.446 cm, nominal.
+
+              For the innermost beampipe radius [ 2.4976 cm ], the
+              corresponding polar angle w.r.t. z = 0 is 11.35 deg
+              relative to the negative z axis; this polar angle is
+              still only 16.47 deg. w.r.t. z = -4.0 cm, so that this
+              range of z terminates well below the backward track
+              reconstruction horizon [ ~ 30 deg. ] in all cases.
+
+************************************************************************
+*                                                                      *
+*                                                                      *
+*    The beampipe material description is confined to the region       *
+*                                                                      *
+*        - 12.446  .le.  z  .le.  + 13.477 cm    [ w.r.t. the IP ]     *
+*                                                                      *
+*                                                                      *
+************************************************************************
+
+Note: The outer edge of the Tantalum foil corresponds to a radius of
+****  2.851 cm. The foil begins at z = + 10.137 cm and -7.871 cm, and
+      these values correspond to forward and backward polar angles of
+      15.71 and 19.91 deg, resp., which are well below the relevant
+      tracking horizon. However, the z values which correspond to these
+      horizon angles w.r.t. the edges of the Tantalum are +2.31 cm
+      and -2.93 cm [ignoring slope and offset of the beam collision
+      axis], so that tracks near the tracking horizon angles will
+      "see" the tantalum foil if they originate from the outer
+      |z| reaches of the luminous region.
+
+  Specification of the Water Channel Geometry
+  ********************************************
+
+  The water channel geometry can be seen in top and side views at:
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/waterchannel.ps.gz
+
+  where I have shaded in red the areas of Be which are NOT machined
+  away to form the water channel. Top and bottom, the unmachined Be
+  is just a strip of constant width for the range of z of interest.
+  This is true of the side regions for z<0, but in the positive z
+  region the azimuthal range of the unmachined region varies with z.
+
+
+  A cross-sectional view corresponding to z<0 and in the region of
+  the thicker water jacket wall, can be found at:
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/crosssection.ps.gz
+
+  here I have shaded in red the water flow regions so as to outline
+  the "ribs" on the beampipe. There is actually a small gap between
+  each rib and the water jacket [the beampipe had to be inserted into
+  the water jacket without scratching the Ni plating], and water
+  should flow in this region also; I estimate the gap size to be
+  ~140 microns, and this is included in material descriptions 4b and 4d
+  of the previous section.
+
+  A y-z section of the entire assembly can be found at:
+
+
+http://www.slac.stanford.edu/~wmd/beampipe/yzsection.ps.gz
+
+  with relevant z dimensions indicated. Radial dimensions should be
+  obtained from sections 2 and 4 above.
+
+  In order to describe the water channel geometry, I divide the z
+  region of interest into 5 sub-regions. All z coords. are in cm.
+  w.r.t. the IP, and azimuth is specified in radians in the usual
+  B-Factory coord.system.
+
+  I.  (- 12.446) < z < (- 7.871 )
+      ---------------------------
+
+     Define  deltaphi1  =  0.0  +/- 0.140  and     pi  +/- 0.140
+             deltaphi2  =  pi/2 +/- 0.140  and 3*pi/2  +/- 0.140
+
+     Then    deltaphi1              corres. to   material  4d
+
+             deltaphi2              corres. to   material  4d
+
+     2*pi - (deltaphi1 + deltaphi2) corres. to   material  4c
+
+
+ II.  (-  7.971) < z < (  2.711 )
+      ---------------------------
+
+             deltaphi1              corres. to   material  4b
+
+             deltaphi2              corres. to   material  4b
+
+     2*pi - (deltaphi1 + deltaphi2) corres. to   material  4a
+
+
+ III. (   2.711) < z < ( 10.137 )
+      ---------------------------
+
+     Let     dphi1      =  0.140 + (z - 2.711) * 0.0552
+
+     Define  deltaphi3  =  0.0  +/- dphi1  and     pi  +/- dphi1
+
+
+     Then    deltaphi2              corres. to   material  4b
+
+             deltaphi3              corres. to   material  4b
+
+     2*pi - (deltaphi2 + deltaphi3) corres. to   material  4a
+
+
+ IV.  (  10.137) < z < ( 11.700 )
+      ---------------------------
+
+     Let     dphi2      =  0.550 - (z -10.137) * 0.262
+
+     Define  deltaphi4  =  0.0  +/- dphi2  and     pi  +/- dphi2
+
+
+     Then    deltaphi2              corres. to   material  4d
+
+             deltaphi4              corres. to   material  4d
+
+     2*pi - (deltaphi2 + deltaphi4) corres. to   material  4c
+
+
+  V.  (  11.700) < z < ( 13.477 )
+      ---------------------------
+
+             deltaphi2              corres. to   material  4d
+
+     2*pi - (deltaphi2)             corres. to   material  4c
+
+
+     The linear approx. to the channel wall in region IV is
+   reasonable, and since this region is entirely under the Tantalum
+   foil, this description should be adequate to our needs.
+
+
+6) A Proposal for an Effective Beampipe Representation
+   ===================================================
+
+  i) Treat the beampipe as a simple cylinder over the z range
+
+        - 12.446 .le. z .le. 13.477 cm
+
+     with
+
+        internal radius = 2.4972 cm  [ = internal beampipe radius
+                                         - Au skin depth          ]
+
+        external radius = 2.7868 cm  [ = external water jacket radius
+                                         + BR127 coating thickness   ]
+
+  ii) Divide the beampipe into four z intervals as follows:
+
+       A) - 12.446  <  z  <  - 7.871 cm
+
+       B) -  7.871  <  z  <    2.711 cm
+
+       C)    2.711  <  z  <   10.137 cm
+
+       D)   10.137  <  z  <   13.477 cm
+
+      and for each interval treat the cylinder as made of a composite
+      material having the relevant percentage composition by weight
+      and average density. These latter quantities should be obtained
+      by performing the appropriate volume integral over r, phi and
+      z for each individual material, and then combining the results
+      as indicated in the following subsection.
+
+  iii) The effective volume per unit length in z is
+
+           Veff  = pi * [ r(external)**2 - r(internal)**2 ] * delta z
+
+                 = 4.8074  cm**3
+
+       We now must obtain the mass contributions for each material in
+       each of regions A,B,C and D.
+
+
+   Region A
+   --------
+     Au :   2*pi* 2.4972 *0.00043 * 19.3   =  0.1302 gm
+
+     Be :  {pi*[2.5824**2 - 2.4976**2 + 2.8346**2 - 2.7345**2]
+
+             + 0.56*[2.7168**2 - 2.5824**2] } * 1.848
+
+        =  6.4745 gm
+
+     Ni :  { [2*pi - 1.12]*2.5829 + 1.12*2.7173 + 8*[2.7173-2.5829]
+
+             +2*pi*2.7341 } * 0.0009*8.902
+
+        =  0.2775 gm
+
+     BR127 : { [2*pi - 1.12]*2.5838 + 1.12*2.7182 + 8*[2.7182-2.5838]
+
+              + 2*pi*2.7331 } * 0.0010 * 1.37
+
+              + 2*pi*2.8354*0.0015*1.37
+
+        =  0.0841 gm
+
+     H2O :   pi*[2.7326**2-2.7187**2] + 2.57873*[2.7187**2-2.5843**2]
+
+        =  2.0760 gm
+
+     Ta :   2*pi*2.8436*0.015*16.654
+
+        =  4.4633 gm
+
+------------------------------------------------------------------------
+     Summary for Region A:
+
+------------------------------------------------------------------------
+     Material    Mass Contribution     percentage by weight
+                     [ gm ]
+------------------------------------------------------------------------
+     Au             0.1302             0.9640
+
+     Be             6.4745            47.9394
+
+     Ni             0.2775             2.0547
+
+     BR127          0.0841             0.6227
+
+     H2O            2.0760            15.3714
+
+     Ta             4.4633            33.0478
+
+------------------------------------------------------------------------
+     Total         13.5056           100.0000
+------------------------------------------------------------------------
+     Average S.G.     = 13.5056/4.8074    =  2.8093
+
+     Effective R.L.   = 15.7927 gm/cm**2  = 15.7927/2.8093 cm
+                                          =  5.6216 cm
+
+     Effective % R.L. = 100*0.2896/5.6216 =  5.152 %
+
+
+     Effective dE/dx  = 1.5000 MeV/{gm/cm**2} = 1.5000*2.8093 MeV/cm
+                                              = 4.214 MeV/cm
+
+     Effective dE     = 4.214 * 0.2896    =  1.220 MeV
+
+
+
+
+   Region B
+   --------
+     Au :   2*pi* 2.4972 *0.00043 * 19.3   =  0.1302 gm
+
+     Be :  {pi*[2.5824**2 - 2.4976**2 + 2.7853**2 - 2.7345**2]
+
+             + 0.56*[2.7168**2 - 2.5824**2] } * 1.848
+
+        =  4.8660 gm
+
+     Ni :  { [2*pi - 1.12]*2.5829 + 1.12*2.7173 + 8*[2.7173-2.5829]
+
+             +2*pi*2.7341 } * 0.0009*8.902
+
+        =  0.2775 gm
+
+     BR127 : { [2*pi - 1.12]*2.5838 + 1.12*2.7182 + 8*[2.7182-2.5838]
+
+              + 2*pi*2.7331 } * 0.0010 * 1.37
+
+              + 2*pi*2.7861*0.0015*1.37
+
+        =  0.0834 gm
+
+     H2O :   pi*[2.7326**2-2.7187**2] + 2.57873*[2.7187**2-2.5843**2]
+
+        =  2.0760 gm
+
+
+------------------------------------------------------------------------
+     Summary for Region B:
+
+------------------------------------------------------------------------
+     Material    Mass Contribution     percentage by weight
+                     [ gm ]
+------------------------------------------------------------------------
+     Au             0.1302             1.7516
+
+     Be             4.8660            65.4639
+
+     Ni             0.2775             3.7333
+
+     BR127          0.0834             1.1220
+
+     H2O            2.0760            27.9291
+
+------------------------------------------------------------------------
+     Total          7.4331            99.9999
+------------------------------------------------------------------------
+     Average S.G.     =  7.4331/4.8074     =  1.5462
+
+     Effective R.L.   = 42.0471 gm/cm**2   = 42.0471/1.5462 cm
+                                           = 27.1938 cm
+
+     Effective % R.L. = 100*0.2896/27.1938 =  1.065 %
+
+
+     Effective dE/dx  = 1.6927 MeV/{gm/cm**2} = 1.6927*1.5462 MeV/cm
+                                              = 2.617 MeV/cm
+
+     Effective dE     = 2.617 * 0.2896    =  0.758 MeV
+
+
+
+
+   Region C
+   --------
+     Au :   2*pi* 2.4972 *0.00043 * 19.3   =  0.1302 gm
+
+     Be :  {pi*[2.5824**2 - 2.4976**2 + 2.7853**2 - 2.7345**2]
+
+             + 0.56*[2.7168**2 - 2.5824**2]
+
+             + 0.41*[2.7168**2 - 2.5824**2] } * 1.848
+
+        =  5.4056 gm
+
+     Ni :  { [2*pi - 1.94]*2.5829 + 1.94*2.7173 + 8*[2.7173-2.5829]
+
+             +2*pi*2.7341 } * 0.0009*8.902
+
+        =  0.2784 gm
+
+     BR127 : { [2*pi - 1.94]*2.5838 + 1.94*2.7182 + 8*[2.7182-2.5838]
+
+              + 2*pi*2.7331 } * 0.0010 * 1.37
+
+              + 2*pi*2.7861*0.0015*1.37
+
+        =  0.0836 gm
+
+     H2O :   pi*[2.7326**2-2.7187**2] + 2.57873*[2.7187**2-2.5843**2]
+
+                                      - 0.41  *[2.7187**2-2.5843**2]
+
+        =  1.7838 gm
+
+
+------------------------------------------------------------------------
+     Summary for Region C:
+
+------------------------------------------------------------------------
+     Material    Mass Contribution     percentage by weight
+                     [ gm ]
+------------------------------------------------------------------------
+     Au             0.1302             1.6950
+
+     Be             5.4056            70.3708
+
+     Ni             0.2784             3.6242
+
+     BR127          0.0836             1.0883
+
+     H2O            1.7838            23.2217
+
+------------------------------------------------------------------------
+     Total          7.6816           100.0000
+------------------------------------------------------------------------
+     Average S.G.     = 7.6816 /4.8074     =  1.5979
+
+     Effective R.L.   = 43.3877 gm/cm**2   = 43.3877/1.5979 cm
+                                           = 27.1530 cm
+
+     Effective % R.L. = 100*0.2896/27.1530 =  1.067 %
+
+
+     Effective dE/dx  = 1.6744 MeV/{gm/cm**2} = 1.6744*1.5979 MeV/cm
+                                              = 2.676 MeV/cm
+
+     Effective dE     = 2.676 * 0.2896    =  0.775 MeV
+
+
+
+
+   Region D
+   --------
+     Au :   2*pi* 2.4972 *0.00043 * 19.3   =  0.1302 gm
+
+     Be :  {pi*[2.5824**2 - 2.4976**2 + 2.8346**2 - 2.7345**2]
+
+             + 0.28*[2.7168**2 - 2.5824**2] } * 1.848
+
+        =  6.1060 gm
+
+     Ni :  { [2*pi - 0.56]*2.5829 + 0.56*2.7173 + 4*[2.7173-2.5829]
+
+             +2*pi*2.7341 } * 0.0009*8.902
+
+        =  0.2726 gm
+
+     BR127 : { [2*pi - 0.56]*2.5838 + 0.56*2.7182 + 4*[2.7182-2.5838]
+
+              + 2*pi*2.7331 } * 0.0010 * 1.37
+
+              + 2*pi*2.8354*0.0015*1.37
+
+        =  0.0832 gm
+
+     H2O :   pi*[2.7326**2-2.7187**2] + 2.8602*[2.7187**2-2.5843**2]
+
+        =  2.2766 gm
+
+     Ta :   2*pi*2.8436*0.015*16.654
+
+        =  4.4633 gm
+
+
+------------------------------------------------------------------------
+     Summary for Region D:
+
+------------------------------------------------------------------------
+     Material    Mass Contribution     percentage by weight
+                     [ gm ]
+------------------------------------------------------------------------
+     Au             0.1302             0.9766
+
+     Be             6.1060            45.7999
+
+     Ni             0.2726             2.0447
+
+     BR127          0.0832             0.6241
+
+     H2O            2.2766            17.0763
+
+     Ta             4.4633            33.4783
+
+------------------------------------------------------------------------
+     Total         13.3319            99.9999
+------------------------------------------------------------------------
+     Average S.G.     = 13.3319/4.8074    =  2.7732
+
+     Effective R.L.   = 15.5990 gm/cm**2  = 15.5990/2.7732 cm
+                                          =  5.6249 cm
+
+     Effective % R.L. = 100*0.2896/5.6249 =  5.149 %
+
+
+     Effective dE/dx  = 1.5047 MeV/{gm/cm**2} = 1.5047*2.7732 MeV/cm
+                                              = 4.173 MeV/cm
+
+     Effective dE     = 4.173 * 0.2896    =  1.208 MeV
+
+************************************************************************
+************************************************************************
+
+     Overall Summary
+
+------------------------------------------------------------------------
+     Material          Region A     Region B     Region C     Region D
+
+    [% weight]         [-12.446,    [- 7.871,    [  2.711,    [ 10.137,
+                        - 7.871]       2.711]      10.137]      13.477]
+
+------------------------------------------------------------------------
+     Au                   0.9640       1.7516       1.6950       0.9766
+
+     Be                  47.9394      65.4639      70.3708      45.7999
+
+     Ni                   2.0547       3.7333       3.6242       2.0447
+
+     BR127                0.6227       1.1220       1.0883       0.6241
+
+     H2O                 15.3714      27.9291      23.2217      17.0763
+
+     Ta                  33.0478       0.           0.          33.4783
+
+------------------------------------------------------------------------
+     Average S.G.         2.8093       1.5462       1.5979       2.7732
+------------------------------------------------------------------------
+
+     Effective R.L.     
+          gm/cm**2       15.7927      42.0471      43.3877      15.5990
+             cm           5.6216      27.1938      27.1530       5.6249
+
+     Effective % R.L.     5.152        1.065        1.067        5.149
+
+------------------------------------------------------------------------
+
+     Effective dE/dx          
+      MeV/{gm/cm**2}      1.5000       1.6927       1.6744       1.5047
+      MeV/cm              4.214        2.617        2.676        4.173
+
+     Effective dE[MeV]    1.220        0.758        0.775        1.208
+
+************************************************************************
+************************************************************************
+
+
+7) To see pictures of the assembly of the SVT on the IP Region, go to
+   ===========================================================
+
+
+http://design.lbl.gov/~bfvertex/goozen/ass_fix.html
+
+   [from Natalie Roe]
+
+
+8) Resource People at SLAC:
+   -----------------------
+
+   Mike Sullivan   sullivan@slac.stanford.edu   xt. 4716
+
+   Karen Fant      fant@slac.stanford.edu       xt. 4466
+
+   Catherine Carr  clcarr@slac.stanford.edu     xt. 3965
+
+   Scott DeBarger  debarger@slac.stanford.edu   xt. 4647
+
+
+9) To search the SLAC drawing data base, go to
+   ====================================
+
+
+http://www.slac.stanford.edu/grp/md/dcon/draw/draw.html
+
+   [according to Scott DeBarger]
+
+
+10) The Support Tube
+   ================
+
+   The support tube consists of a central section made of carbon fibre,
+   and forward and backward sections made of stainless steel.
+
+   The C fibre tube was manufactured by AMALGA Composites, Inc. of
+   West Allis, Wisconsin; the contact person there is Gregg Piper
+   [Tel: (414) 453-9555].
+    According to him, the final material density is:
+
+       0.058 lbs/cu.in. =  1.605 gm/ cm**3
+
+   The composition by weight is   52% C , 48% epoxy resin.
+
+   If I take the S.G. of C = 2.265, the net density and weight
+   composition imply a density of 1.219 gm/ cm**3 for the epoxy resin.
+   This seems like a reasonable number. It is very close to that for
+   Lexan ( 1.20 ) and not very different from that for Nylon ( 1.14 ).
+
+   A reasonable material model would be to treat the tube as being
+   composed according to one of the following prescriptions:
+
+   i) C and Lexan: by volume, 38.0% C, 62.0% Lexan
+                   by weight, 53.7% C, 46.3% Lexan
+
+
+  ii) C and Nylon: by volume, 41.3% C, 58.7% Nylon
+                   by weight, 58.3% C, 41.7% Nylon
+
+  Each of these gives a net density of 1.605 gm/ cm**3, but i) gives
+  a closer match to the actual material composition.
+
+  The cylinder was built on a mandrel whose diameter was the nominal
+  inner diameter [17.075 inches]; 4 layers of C fibre soaked in resin
+  were laid down at stereo angles [85,+/-10,+/-10,85] degrees; this
+  created the nominal thickness. A further 0.065" C fibre layer was
+  added, and finally a 0.030" fibre glass skin completed the winding
+  process. The fibre glass is subjected to longitudinal tension in
+  order to compress the soggy mess underneath; this is called
+  "debulking"; you can't do this with C fibre, since it breaks.
+
+  After curing, the fibre glass is machined away, and the extra C fibre
+  layer ground down in order to reach the specified wall thickness.
+  The dimensions of the finished product were checked using a coordinate
+  measuring machine in order to verify that they were within
+  specification.
+
+  Gregg Piper could not find the CMM data. The only measurements I
+  was able to obtain were from Martin Nordby at SLAC, and pertained
+  to the cylinder thickness at each end. Average values were 0.079"
+  at one end and 0.085" at the other. The spec. on thickness was
+  +/- 0.005", and on inner radius was +/- 0.010". Since the cylinder
+  was built on a mandrel, it is probably reasonable to use the nominal
+  value for the inner radius in the absence of info. to the contrary.
+  Since the cylinder was machined down from a larger thickness, it is
+  reasonable to expect that it might tend to be slightly thicker than
+  nominal. The average of the SLAC measurements is 0.082", in
+  agreement with this "logic", so it is probably reasonable to use
+  this value.
+
+  For a thickness of 0.082"=0.2083cm, and model (i):
+
+   % by weight C     = 53.7           R.L.= 42.70 g/cm**2 = 18.8 cm
+                                     dE/dx= 1.745 MeV/(g/cm**2)
+
+   % by weight Lexan = 46.3           R.L.= 41.46 g/cm**2 = 34.6 cm
+                                     dE/dx= 1.886 MeV/(g/cm**2)
+
+  we obtain     R.L. = 42.12 g/cm**2 = 26.24 cm for S.G.=1.605
+
+               dE/dx = 1.810 MeV/(g/cm**2) = 2.909 MeV/cm for S.G.=1.605
+
+  It follows that a thickness of 0.2083 cm corresponds to:
+
+   0.794 % R.L.   and  a  min.I energy loss of 0.605 MeV
+
+  at normal incidence, in this model.
+
+
+   Dimensions of interest are then as follows:
+
+  --------------------------------------------------------------------
+   Carbon Fibre:           |   Nominal             Measured
+  --------------------------------------------------------------------
+                           |
+     Internal Diameter     |   17.075 "      No data-use nominal
+     Wall thickness        |    0.080 "      0.082" from limited data
+     Length                |   48.045 "      No data
+     Exposed Length        |   44.415 "      No data
+     [i.e. subtracting     |
+      joint overlaps       |
+      with stainless]      |
+                           |
+     z location of         |  -15.672 "  relative to the IP [nominal]
+     backward junction     |
+     with stainless        |
+                           |
+                           |
+     z location of         |   28.743 "  relative to the IP [nominal]
+     forward junction      |
+     with stainless        |
+  --------------------------------------------------------------------
+
+     From these values we obtain:
+
+  --------------------------------------------------------------------
+   Carbon Fibre:           |   Nominal             Measured
+  --------------------------------------------------------------------
+                           |
+       Internal Radius     |   21.6853 cm    21.6853 [no data]
+                           |
+       Thickness           |    0.2032 cm     0.2083 [from limited data]
+                           |
+       External Radius     |   21.8885 cm    21.8936 [ ditto ]
+                           |
+       z minimum           |  -39.8069 cm       use nominal
+                           |
+       z maximum           |   73.0072 cm           "
+                           |
+       Line-of-sight from  |
+       the IP to the       |
+       beginning of the    |
+       stainless:          |
+                           |
+         Backward          |   28.80 deg            "
+                           |
+         Forward           |   16.69 deg            "
+  --------------------------------------------------------------------
+
+ Note: The backward l-o-s is rather close to the tracking horizon
+ ----  [30 deg ]; in fact for z .le. - 2.5 cm, the stainless is
+       inside the standard fiducial region.
+
+   Stainless
+   ---------
+
+      Internal Diameter  =  16.520 "
+
+      External Diameter  =  17.440 "  [ 0.035 " larger at joint
+                                        with Carbon ]
+
+      Wall Thickness     =   0.46 "
+
+                         =   1.168 cm
+
+  Support Tube Information from Martin Nordby
+  ===========================================
+
+From debarger@SLAC.Stanford.EDU Wed Sep 24 15:19:48 2003
+Date: Wed, 24 Sep 2003 15:09:54 -0700
+From: "DeBarger, Scott" 
+To: "Dunwoodie, William" 
+Cc: "Stan Ecklund (Ecklund, Stan)" ,
+     "Sullivan, Michael" 
+Subject: FW: CFC Support Tube Fab Data
+
+Martin Nordby put together this summary of the known information on the
+carbon fiber portion of the Support Tube. He tells me that only one
+tube was purchased, although the contract was written with an option 
+to purchase a second tube.
+
+-Scott
+
+-----Original Message-----
+From: Nordby, Martin E. 
+Sent: Wednesday, September 24, 2003 2:15 PM
+To: DeBarger, Scott
+Subject: CFC Support Tube Fab Data
+
+Scott,
+I looked over my old files on the CFC Central Tube for the Support 
+Tube, and found a few things.
+
+Dwg #:  SC-343-910-02
+
+Dimensions per the drawing:
+
+ Inside diameter        :  17.075 +/- 0.020"
+ Wall thickness         :   0.080 +/- 0.005"
+ Outside diameter       :  17.235" reference dimension
+
+Dimensions per Amalga Composite fab process description
+
+ Mandrel diameter       :  17.045"
+ Ground outside diameter:  17.235" max
+
+Amalga wrapped the wet CFC filament-wound tube with fiberglass 
+pre-preg to maintain compactness of the fiber wrapping during cure.  
+After they cured, most/all of this was ground off.  You could see some
+local regions where there was just a flash of this left on the tube 
+after grinding, but pretty much all of it was removed during the 
+post-cure grinding.
+
+My recollection was that the mandrel was aluminum.  The tube cured at 
+275 degF, per their process plan, so this would explain why the 
+diameter is undersized.
+
+CMM inspection data showed that we checked 2 thicknesses at each end. 
+One end was 0.079" thick at both locations checked.  The other end was 
+0.084" and 0.085" thick.  This is within tolerance. I remember thinking
+about doing thickness testing throughout the tube, but couldn't work
+out a reliable way to do that.
+I can't find any record of as-measured OD, so it's hard to set a max 
+possible dimension.  I can't believe that I didn't measure OD, so I'll
+keep looking.
+
+-----------------------------------------------------------------------
+Comment added by WMD
+--------------------
+   Al has a coefft. of expansion     2.31 * 10^{-5} / deg. K
+
+C Fib has a coefft. of expansion ~0.7-1.0 * 10^{-5} / deg. K
+[PAN Precursor Fiber]
+as far as I can find out
+
+For a 200 deg. F increase in temp., the Al should expand by ~ 0.044"
+
+For a 200 deg. F decrease in temp., the CF should contract by ~0.013"
+                                                              -0.019"
+
+so that the net internal diameter should be ~ 17.070 - 17.076 "
+This agrees with Martin's measurements.
+
+-----------------------------------------------------------------------
+
+Taking the worst-case dimensions measured and theoretical, the 
+worst-case thickness could be 17.235" OD - 17.045" Mandrel 
+diameter = 0.095" thick.  This could be a rational upper bound on 
+thickness for BaBar folks to use in mass cross-section analyses.
+
+On a related topic, the load test curves for the fully-assembled 
+Support Tube showed that we were getting about 25% more deflection
+than the ANSYS model predicted.  I didn't have time to track down the
+reason, but it always bugged me.  One possible explanation is that the
+CFC tube wasn't as stiff as predicted because there wasn't the correct
+mass fraction of carbon fiber, and too much epoxy.  We never weighed
+the tube, so this theory can't be confirmed, but if the epoxy is denser
+than carbon fibers, this theory would support BaBar's suspiscions.
+
+Per Amalga documents, materials were:
+
+ Epoxy        :  Epon 826 resin
+ Carbon fibers:  Courtaulds G34-700 12k fiber
+
+I hope this helps. I'll try to unearth any additional inspection data 
+and let you know if I find some.
+
+
+Martin
+
+========================================================================
+
+Support Tube Thickness in Simulation
+====================================
+
+
+From wmd@SLAC.Stanford.EDU Mon Nov 10 09:36:41 2003
+Date: Fri, 31 Oct 2003 14:25:08 -0800 (PST)
+From: William M. Dunwoodie 
+To: Dennis Wright 
+Cc: Bill Dunwoodie ,
+     Jonathan Coleman 
+Subject: Re: support tube thickness
+
+Dear Dennis,
+            Thank you. That is the nominal thickness. The spec. was
+to be within 5 mils of this. Martin Nordby measured 79 mils at one
+end and 85 mils at the other, so it might be a few % thicker than
+nominal. Maybe some day we can check it more carefully.
+
+    Best regards,
+                 Bill
+========================================================================
+
+On Fri, 31 Oct 2003, Dennis Wright wrote:
+
+> Hi Bill,
+>
+>    The support tube thickness currently in the simulation is
+> 80 mils.
+>
+> Dennis
+
+=======================================================================
+
+
+11) The SVT R.F. Shield / Gas "Bag"
+    ===============================
+
+   The entire SVT region is enclosed in an R.F. shield. This consists
+   of an approximately cylindrical surface composed of aluminized
+   Kapton. It is located at a radius of ~20 cm, and in thickness it
+   consists of 0.002 " Al on the inside surface of 0.002 " Kapton.
+   It occupies roughly the same z range as the C fibre tube.
+
+
+
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  Al                0.0051        0.057          0.022
+
+  Kapton            0.0051        0.018          0.013
+
+------------------------------------------------------------------------
+  Total                           0.075          0.035
+------------------------------------------------------------------------
+
+12) Net Effect of Beampipe, Outer R.F.Shield and C Fibre Support Tube
+    =================================================================
+
+
+------------------------------------------------------------------------
+                       Region A     Region B     Region C     Region D
+
+                       [-12.446,    [- 7.871,    [  2.711,    [ 10.137,
+                        - 7.871]       2.711]      10.137]      13.477]
+
+------------------------------------------------------------------------
+     Effective % R.L.:
+     -----------------
+
+     Beampipe             5.152        1.065        1.067        5.149
+
+     Outer
+     R.F.Shield           0.075        0.075        0.075        0.075
+
+     C Fibre
+     Support Tube         0.794        0.794        0.794        0.794
+
+************************************************************************
+
+     Total                6.021        1.934        1.936        6.018
+
+************************************************************************
+     Effective dE[MeV]:
+     ------------------
+
+     Beampipe             1.220        0.758        0.775        1.208
+
+     Outer
+     R.F.Shield           0.035        0.035        0.035        0.035
+
+     C Fibre
+     Support Tube         0.605        0.605        0.605        0.605
+
+************************************************************************
+
+     Total                1.860        1.398        1.415        1.848
+
+************************************************************************
+
+
+13) Inner SVT R.F.Shield and Inner Be Wall of the Dch
+    =================================================
+
+    The SVT has an inner R.F. shield at a radius of ~3.2 cm. In
+thickness it consists of 100 microns of carbon fibre with a 25 micron
+Al skin on the larger radius side.
+
+  The inner wall of the Drift Chamber in the tracking region is made
+of Be of thickness 1 mm. In length its range is -546.17 < z < 803.17 mm
+in the B-Factory coord. system; there is an additional region of length
+4.83 mm at each end corresponding to the joint with the remainder of
+the inner wall, which consists of Al of 5 mm thickness; in the overlap
+regions, the Al thickness is 2 mm, and is at larger radius than the Be.
+
+ The Be cylinder is made of 3 sheets of material brazed together by
+means of Be ribs located at 90, 210 and 330 deg. in azimuth; the
+x-y cross-section of an individual rib is shown at
+
+ Dch Inner Cylinder Be rib
+
+The inner radius of the Be cylinder is 238 mm, and for the Al cylinder
+it is 236 mm outside the regions of overlap.
+
+Both Be surfaces are painted with the same BR127 anti-corrosion paint
+used on the beampipe. According to Richard Boyce, the specified
+thickness was 0.003" [= 76.2 microns] on each surface, which then
+gives a total thickness of 0.01524 cm.
+[From above, BR127 is estimated to have X0=24.2 cm and 
+dE/dx = 2.56 Mev/cm]
+
+The surface of the cylinder in contact with the gas volume was NOT
+subsequently covered with Aluminum foil. This can be seen in the
+following picture taken during stringing:
+
+ Dch Inner Cylinder during Stringing
+
+The greenish colour [due to BR127] of the Be section is in contrast to
+the Aluminum section at the end which is visible in the picture.
+
+Note: The inner wall was constructed from 3 Be panels. Measurements of
+----  panel thickness prior to construction [see Richard Boyce for data]
+      yielded values ~0.044" on average i.e. ~10% beyond spec. It is
+      assumed that, as a consequence of cleaning after assembly, this
+      was reduced to ~ 1 mm [especially since the process had to be
+      carried out twice; the original cylinder was damaged and had to
+      be shortened, thus necessitating a second cleaning]
+
+      The panels are brazed to Be ribs running parallel to the cylinder
+      axis. These are 1 mm wide in the r-phi direction, and 3 mm thick
+      in the radial direction. One rib is at phi=90 deg., and the others
+      are at +/- 120 deg. w.r.t. this position.
+
+
+   The contributions due to these additional materials, Be ribs not
+   included, are as follows:
+
+------------------------------------------------------------------------
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  C Fibre           0.0100        0.038          0.029
+
+  Al                0.0025        0.028          0.011
+
+
+  Be                0.1           0.284          0.294
+
+  BR127 paint       0.01524       0.063          0.039
+************************************************************************
+
+  Total                           0.413          0.373
+
+************************************************************************
+
+A Composite Material Representing the Dch Inner Wall for Track
+--------------------------------------------------------------
+Reconstruction
+--------------
+
+1) Treat as Be( 1 mm.) and BR127 Paint( 0.1524 mm)
+
+2) In MC, rmin = 23.78276 cm, rmax = 23.9000 cm
+
+3) Weight fractions:  BR127 = 0.1015, Be = 0.8985
+
+   Effective Density: 1.785 gm / cm**3
+
+
+4) Effective R.L.  = 61.890 gm / cm**2       = 34.68 cm.
+
+5) Effective dE/dx =  1.622 MeV / {gm/cm**2} =  2.89 MeV / cm.
+
+
+6) If you want to keep the inner radius at the nominal 23.8000 cm, the
+   effective density increases by 1.152, to give
+
+   Effective density =  2.056 gm / cm**3
+
+   Effective R.L.    = 61.89 gm / cm**2        = 30.10 cm.
+
+   Effective dE/dx   =  1.622 MeV / {gm/cm**2} =  3.33 MeV / cm.
+
+   Note that for Be alone:
+
+             density =  1.848 gm / cm**3
+
+             R.L.    = 35.24  cm.
+
+             dE/dx   =  2.946 MeV / cm.
+
+   so that the effect of the paint is not negligible.
+
+************************************************************************
+
+The grand summary then becomes:
+
+========================================================================
+                       Region A     Region B     Region C     Region D
+
+                       [-12.446,    [- 7.871,    [  2.711,    [ 10.137,
+                        - 7.871]       2.711]      10.137]      13.477]
+
+========================================================================
+     Effective % R.L.:
+     -----------------
+
+     Beampipe             5.152        1.065        1.067        5.149
+
+     Inner
+     R.F. Shield          0.066        0.066        0.066        0.066
+
+     Outer
+     R.F.Shield           0.075        0.075        0.075        0.075
+
+     C Fibre
+     Support Tube         0.794        0.794        0.794        0.794
+
+     Inner
+     Dch. Wall            0.347        0.347        0.347        0.347
+************************************************************************
+
+     Total                6.434        2.347        2.349        6.431
+
+************************************************************************
+     Note: For the SVT, 5 layers of Si of thickness 300 microns
+     ----  represents 1.603 % R.L.
+
+************************************************************************
+     Effective dE[MeV]:
+     ------------------
+
+     Beampipe             1.220        0.758        0.775        1.208
+
+     Inner
+     R.F. Shield          0.040        0.040        0.040        0.040
+
+     Outer
+     R.F.Shield           0.035        0.035        0.035        0.035
+
+     C Fibre
+     Support Tube         0.605        0.605        0.605        0.605
+
+     Inner
+     Dch. Wall            0.333        0.333        0.333        0.333
+************************************************************************
+
+     Total                2.233        1.771        1.788        2.221
+
+************************************************************************
+     Note: For the SVT, 5 layers of Si of thickness 300 microns
+     ----  yields dE = 0.582 MeV for min.I, normal incidence.
+
+************************************************************************
+
+Additional SVT Material in Layers 4 and 5
+=========================================
+
+Here is some correspondence with Giovanni Calderini w.r.t. this material
+and with Dave Brown regarding its inclusion in Detector Model.
+
+------------------------------------------------------------------------
+From wmd@slac.stanford.edu Tue Nov 23 13:32:28 2004
+Date: Tue, 23 Nov 2004 13:30:11 -0800 (PST)
+From: William M. Dunwoodie 
+To: brownd@slac.stanford.edu
+Cc: Bill Dunwoodie ,
+     Jonathan Coleman 
+Subject: Re: SVT Material (fwd)
+
+Dear Dave,
+          I tried to estimate the material as follows:
+
+Material:  Kevlar
+--------
+Nominal Thickness:  ?  [Looks to be same as for ribs]
+-----------------
+
+Layer 4
+-------
+       center at z ~ + 6.4 cm on outside surface of wafer
+
+       sides[2]:  z length 40 mm, length normal to wafer 10 mm,
+                  effective thickness allowing for holes = 0.84*nominal
+
+       base    :  z length 40 mm, width in wafer surface 27.3 mm,
+                  effective thickness allowing for holes = 0.92*nominal
+
+Layer 5
+-------
+       center at z ~ + 6.2 cm on outside surface of wafer
+
+       sides[2]:  z length 40 mm, length normal to wafer 10 mm,
+                  effective thickness allowing for holes = 0.84*nominal
+
+       base    :  z length 40 mm, width in wafer surface 32.3 mm,
+                  effective thickness allowing for holes = 0.93*nominal
+
+I hope this is of help.
+
+           Best regards,
+                        Bill
+------------------------------------------------------------------------
+
+Date: Tue, 23 Nov 2004 11:08:42 -0800 (PST)
+From: William M. Dunwoodie 
+To: brownd@slac.stanford.edu
+Cc: Bill Dunwoodie ,
+     Jonathan Coleman 
+Subject: Re: SVT Material (fwd)
+
+Dear Dave,
+          I asked Giovanni Calderini about the material in layers 4 and
+5, and attach his response. I guess that it is Kevlar, and from the
+drawing it seems to be of the same thickness as the ribs, but I don't
+see a thickness specified. The 4 holes in each side can be seen in the
+picture of Giovanni and Ben Smith, so that looks o.k. However, in the
+picture the base has only 8 triangular holes instead of 16, so there is
+a bit more material than the drawing would indicate. I guess this could
+just be included as solid Kevlar with the thickness reduced to take
+account of the holes.
+                     Best regards,
+                                  Bill
+------------------------------------------------------------------------
+
+Date: Tue, 23 Nov 2004 07:48:33 -0800 (PST)
+From: Giovanni Calderini 
+To: William M. Dunwoodie 
+Cc: Jonathan Coleman ,
+     William Stephen Lockman 
+Subject: Re: SVT Material
+
+
+Dear Bill, how are you?
+
+I had noticed your beautifiul tomographies, I already had a chance to
+congratulate with Jon some time ago. I think the r-phi cross section
+could really go in the official BaBar plots, maybe aside of the
+SVT r-phi section drawing.
+
+The centerpiece you refer to is a kevlar piece which is use to connect
+each backward and forward half-module. I've dug in the documentation
+and I found a drawing of this piece, which I'm attaching to the email.
+The ribs for backward and forward half-modules are independent. This
+U piece is used to lock them together. Ideally there is epoxy glue
+only between the ribs and the sides of the U, while no glue is
+underneath it, when it touches the silicons. This glue is supposed to
+melt at high temperature, in case you want to separate the two
+half modules to replace either one (I'm sure it would never work,
+anyway...)
+
+Bill L. and I are in the process of improving the SVT material
+description in the simulation (for instance adding the fanouts,
+another issue that you were the first to raise). It's a good time
+to add also this piece, if it's missing.
+
+If you find some effect which looks strange in the SVT region,
+please feel free to drop an email. I think there is not enough
+interaction between the tracking people and the core SVT group
+(this is mainly my fault, because I'm half of the time in
+Italy and I don't attend tracking meetings very often). But
+every time we have interacted, we have understood and improved
+a lot of things!
+
+Cheers,
+        -Giovanni
+
+------------------------------------------------------------------
+    Here is the "Center piece drawing" :
+
+
+ Centre-piece Drawing
+
+------------------------------------------------------------------------
+
+
+On Mon, 22 Nov 2004, William M. Dunwoodie wrote:
+
+> Dear Giovanni,
+>               Jon and I have been continuing our investigations of
+> detector material. You can find some of the relevant plots at:
+
+ jon's plots
+
+> If you scroll down to 2) [ r vs z for 9< r < 16 cm ] you can see layers
+> 4 and 5 in the barrel and lampshade regions. In the vicinity of
+> z = + 6 cm there is an intensity increase toward higher radius. No one
+> seems to know what this is due to, but when I looked at the SLAC poster
+> showing you and Ben Smith peering at the SVT in the clean room, I could
+> see an extra piece of material connecting the forward-read-out and
+> backward-read-out sections of layer 5; this junction is in fact at
+> ~ + 6 cm in z, and so I assume that this material is the source of these
+> additional interactions, and that it is also there for layer 4. Each
+> piece seems to be about half a wafer long in z, with circular holes
+> removed to reduce the mass, I assume. Do you have any info. on this
+> material? Dave Brown says that it is not in Detector Model, and Bill
+> Lockman didn't know about it. Clearly, this is not a large effect, but
+> Dave says that it would be easy to incorporate this material if we
+> knew what it is [Kevlar?], it's dimensions, and the effective thickness
+> taking into account the holes. [He would just include it as a rectang-
+> ular plate of the effective thickness I believe]. So although it is
+> not much material, it would at least provide a small step in the right
+> direction I think.
+>                   Best regards,
+>                                Bill
+------------------------------------------------------------------------
+
+14) Outer Wall of the Dch
+    =====================
+
+  The outer wall of the Drift Chamber is composed of 2 layers of C
+fibre, each of thickness 1.5 mm, with 6 mm of Nomex in between. I have
+not been able to obtain R.L. or dE/dx information for Nomex, but the
+concensus is that it can be represented reasonably by increasing the C
+fibre thickness by 10 %. The innermost surface has a 50 micron Al skin,
+and the outermost surface has a 100 micron Al skin to provide R.F
+shielding and grounding.
+
+   The inner surface is at a nominal radius of 800 mm, and the length
+is 2764 mm, extending from z= - 1015 mm to z= 1749 mm in the B-Factory
+coordinate system. The detailed structure changes from that indicated
+above in the last ~28 mm at each end, however the material description
+continues to apply in these regions, to a good approximation.
+
+   The estimated characteristics of these materials are as follows:
+
+------------------------------------------------------------------------
+  Material          Thickness     % R.L.         dE[ MeV, min I, normal
+                    [cm]                             incidence ]
+------------------------------------------------------------------------
+  C Fibre           0.3000        1.143          0.873
+
+  Nomex             0.6000        0.114          0.087
+
+                                  [estimated as 10% of
+                                   C fibre contributions]
+
+
+  Al                0.0150        0.169          0.065
+************************************************************************
+
+  Total                           1.426          1.025
+
+************************************************************************
