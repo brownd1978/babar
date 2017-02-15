@@ -1,14 +1,36 @@
 \section{\deltaray Corrections}
 \label{sec:corr}
 \subsection{Backgrounds}
-	Gamma conversion to electron positron pairs can produce electrons within the energy window. This is an irreducible background to our measurement. The energy spectrum for produced electrons and positrons should be symmetric. Identifying positrons created in the beam pipe region and subtracting them from the electron spectrum allows us to statistically subtract the effects of gamma conversion from our measurement. The Monte Carlo simulated positron distribution agrees with the 7\% data sample shown in figure \ref{posdist}.	
+	Gamma conversion to electron positron pairs can produce electrons within the energy window. This is an irreducible background to our measurement. The energy spectrum for produced electrons and positrons should be symmetric. Identifying positrons created in the beam pipe region and subtracting them from the electron spectrum allows us to statistically subtract the effects of gamma conversion from our measurement. The Monte Carlo simulated positron distribution agrees with the 7\% data sample shown in figure \ref{posdist}.
+	\begin{figure}[h]
+		\label{posdist}
+		\centering
+		\includegraphics[scale=0.5]{figures/posdist.eps}
+		\caption{Positron distribution after applying delta ray cuts for both Monte Carlo and Run 3 data. Shown uncertainties are purely statistical.}
+	\end{figure}	
+	
 	Other backgrounds to the measurement are much smaller and are largely removed by data cuts. These will be further removed by statistically subtracting the expected amounts from Monte Carlo simulations.
 
 \subsection{Acceptance and Efficiency}
 	\babar geometric acceptance is taken into account by the selections on the muons. All muons are selected to have 4 SVT hits and 12 Drift Chamber Hits. This requires that the \deltarays are occuring in the central region of the detector.
-	The \babar detector has a varying efficiency which changes with energy. The efficiency probability is calculated for each energy bin using the Monte Carlo truth. The number of true detected \deltarays at each energy is divided by the total number of true \deltarays at that energy. The efficiency for the beam pipe is shown in figure \ref{BPeff}. This is then used to correct the measured distribution by dividing the energy corrected \deltaray distribution by the detector efficiency bin by bin. 
+	
+	The \babar detector has a varying efficiency which changes with energy. The efficiency probability is calculated for each energy bin using the Monte Carlo truth. The number of true detected \deltarays at each energy is divided by the total number of true \deltarays at that energy. The efficiency for the beam pipe is shown in figure \ref{BPeff}. This is then used to correct the measured distribution by dividing the energy corrected \deltaray distribution by the detector efficiency bin by bin.
+	\begin{figure}[!htb]
+		\label{BPeff}
+		\centering
+		\includegraphics[scale=0.5]{figures/Efficiency.eps}
+		\caption{Reconstruction efficiency for true delta rays created in beam pipe.}
+	\end{figure}
+
 \subsection{Energy Correction}
-	There is a small effect of energy smearing from the detector on the selected \deltarays. This is partially due to smearing effects, and to bremsstrahlung. This effect can be correcting using an unfolding  process. This is performed using the ROOT class TSVDUnfold (**include reference), which uses the Monte Carlo simulation of the true distribution and detected distribution. The energy smearing matrix is inverted with a regularization factor for the Singular Value Decomposition. 
+	There is a small effect of energy smearing from the detector on the selected \deltarays. This is partially due to smearing effects, and to bremsstrahlung \ref{BPsmear}. This effect can be correcting using an unfolding  process. This is performed using the ROOT class TSVDUnfold (**include reference), which uses the Monte Carlo simulation of the true distribution and detected distribution. The energy smearing matrix is inverted with a regularization factor for the Singular Value Decomposition. 
+	\begin{figure}[!htp]
+		\label{BPsmear}
+		\centering
+		\includegraphics[scale=0.5]{figures/Energy_Smearing.eps}
+		\caption{Reconstructed energy of true delta rays versus the true energy of the delta rays. This smearing effect can be corrected using a matrix inversion method.}
+	\end{figure}
+
 	This process was tested on the Monte Carlo data. First we separated every other event into a training sample and a test sample. Then we treated the training sample as the Monte Carlo truth and used it to perform the correction on the test sample’s detected distribution. This Provided a distribution of corrected \deltarays that agreed with the Monte Carlo truth for the test sample.
 
 \subsection{Material Transit}
