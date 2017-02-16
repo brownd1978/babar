@@ -1,16 +1,12 @@
 {
 //=========Macro generated from canvas: c7/Gamma Conversion
-//=========  (Wed Feb 15 08:54:41 2017) by ROOT version5.34/32
+//=========  (Wed Feb 15 11:46:13 2017) by ROOT version5.34/32
    TCanvas *c7 = new TCanvas("c7", "Gamma Conversion",0,0,700,700);
    gStyle->SetOptStat(0);
-   c7->Range(-43.47048,-3.490902e-08,331.127,2.667407e-07);
+   c7->Range(-37.5,-3.116078e-08,337.5,2.80447e-07);
    c7->SetFillColor(0);
    c7->SetBorderMode(0);
    c7->SetBorderSize(2);
-   c7->SetLeftMargin(0.1160458);
-   c7->SetRightMargin(0.08309455);
-   c7->SetTopMargin(0.0578635);
-   c7->SetBottomMargin(0.115727);
    c7->SetFrameBorderMode(0);
    c7->SetFrameBorderMode(0);
    
@@ -114,7 +110,7 @@
    Gamma_BP->GetYaxis()->SetLabelFont(42);
    Gamma_BP->GetYaxis()->SetLabelSize(0.035);
    Gamma_BP->GetYaxis()->SetTitleSize(0.035);
-   Gamma_BP->GetYaxis()->SetTitleOffset(1.6);
+   Gamma_BP->GetYaxis()->SetTitleOffset(1.4);
    Gamma_BP->GetYaxis()->SetTitleFont(42);
    Gamma_BP->GetZaxis()->SetLabelFont(42);
    Gamma_BP->GetZaxis()->SetLabelSize(0.035);
@@ -256,7 +252,7 @@
    MC_Gamma_BP->GetZaxis()->SetTitleFont(42);
    MC_Gamma_BP->Draw("same");
    
-   TLegend *leg = new TLegend(0.534384,0.7715134,0.9169054,0.9421365,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.7,0.7,0.9,0.9,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
@@ -291,6 +287,7 @@
    pt->SetFillColor(0);
    pt->SetFillStyle(0);
    pt->SetTextFont(42);
+   TText *text = pt->AddText("Run3");
    pt->Draw();
    c7->Modified();
    c7->cd();
